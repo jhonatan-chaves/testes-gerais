@@ -7,14 +7,24 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-input placeholder="escreva um numero" [(ngModel)]="valor"></ion-input>
+
+  <ion-button (click)="testeService.setValor(0)">acessar caro</ion-button>
+  <ion-list>
+    <ion-card >
+      
+    <ion-item color="primary">
+      {{ cars[valor].Name}}
+     <ion-badge slot="end">{{ cars[valor].Origin }}</ion-badge>
+    </ion-item>
+    <ion-item>
+      Km por litro : {{ cars[valor].Miles_per_Gallon }} 
+    </ion-item>
+    <ion-item>
+      Cilindrada : {{ cars[valor].Cylinders }}
+    </ion-item>
+      
+    </ion-card>
+  </ion-list>
 </ion-content>

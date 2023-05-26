@@ -15,4 +15,8 @@ export class TesteService {
   public setValor(valor : any){
     return valor;
   }
+
+  public setNome(valor : any){
+    return valor.include();
+  }
 }

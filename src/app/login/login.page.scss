@@ -1,0 +1,68 @@
+
+ion-item{
+    --background: none;
+    background: transparent;
+    ion-img{
+        --background:none;
+        background: transparent;
+        width: 180px;
+        height: 150px;
+        margin: auto;
+        margin-top: 70px;
+        
+    }
+    .im-lg{
+        --background:none;
+        background: transparent;
+        
+
+        margin-top: 50%;
+        width: 100px;
+        height: 90px;
+
+    }
+
+}
+
+ion-content{
+    
+  ion-item{
+    //--background: none;
+    //background: transparent;
+    ion-label{
+        --background:none;
+        background: transparent;
+     ion-input{
+        --backgroun: none;
+        border-color: #fff;
+       
+        width: 200px;
+        
+        ion-icon{
+            width: 20px;
+            height: 20px;
+        }
+     }
+    }
+    ion-button{
+        --background: none;
+        background:  #16263D;
+        color: #ff6839;
+        font-weight: 700;
+        border-radius: 7px;
+        
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 0;
+        width: 257px;
+        height: 50px;
+    }
+  }
+  .estilosUn{
+
+    --background:none;
+background: transparent;
+margin: 25px 15%;
+}
+ 
+}

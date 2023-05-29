@@ -1,22 +1,22 @@
 
-<ion-content [fullscreen]="false">
+<ion-content [fullscreen]="false" >
   
 <ion-item lines="none">
-  <ion-img src="https://www.sagafoods.com.br/wp-content/uploads/2020/07/logo-saga-foods-vertical.png"></ion-img>
+  <ion-img src="../../assets/saga-f-branco.png"></ion-img>
 </ion-item>
   <ion-item class="estilosUn" id="altura">
     <ion-label color="laranja">
-      <ion-input  [clearInput]="true"  placeholder="Usuario ou E-mail" color="dark"><ion-icon name="person-sharp" color="laranja"></ion-icon></ion-input>
+      <ion-input  [clearInput]="true"  placeholder="Usuario ou E-mail"  [(ngModel)]="pessoa"  color="dark"><ion-icon name="person-sharp" color="laranja"></ion-icon></ion-input>
     </ion-label>
   </ion-item>
 
   <ion-item class="estilosUn">
     <ion-label color="laranja">
-      <ion-input type="password" placeholder="Senha" color="dark"><ion-icon name="lock-closed" color="laranja"></ion-icon></ion-input>
+      <ion-input type="password" placeholder="Senha" [(ngModel)]="senha"   color="dark"><ion-icon  color="laranja" name="lock-closed" ></ion-icon></ion-input>
     </ion-label>
   </ion-item>
   <ion-item lines="none">
-  <ion-button >acessar</ion-button>
+  <ion-button   (click)="serviceService.validarUsuario(pessoa,senha)"  >acessar</ion-button>
 </ion-item>
 
 
